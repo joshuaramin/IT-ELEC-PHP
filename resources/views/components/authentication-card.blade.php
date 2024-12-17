@@ -1,9 +1,24 @@
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100" style="background-color: #D4BA50;">
     <div>
         {{ $logo }}
     </div>
 
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+    <div class="" 
+    style="width: 15in;
+    max-width: 45rem;
+    height: 320px;
+    margin-top: 1.5rem; 
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;">
         {{ $slot }}
     </div>
 </div>

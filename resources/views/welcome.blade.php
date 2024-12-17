@@ -110,9 +110,9 @@
                                 <p>
                                     1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
     
@@ -129,9 +129,9 @@
                                 <p>
                                     1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
     
@@ -148,9 +148,9 @@
                                 <p>
                                     1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
     
@@ -167,9 +167,9 @@
                                 <p>
                                     1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
     
@@ -186,9 +186,9 @@
                                 <p>
                                     1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
     
@@ -205,9 +205,9 @@
                                 <p>
                                     1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
 
@@ -226,9 +226,9 @@
                                 <p>
                                     {{$auditorium->location}}
                                 </p>
-                                <button>
+                                <a href="{{ route('bookAudi') }}">
                                     MORE DETAILS
-                                </button>
+                                </a>
                             </div>
                         </div>
                         @endforeach --}}

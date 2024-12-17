@@ -11,7 +11,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Styles / Scripts -->
-        <link rel="stylesheet" href="auditorium.css">
+        <link rel="stylesheet" href="bookingForm.css">
 
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -64,168 +64,82 @@
                 </div>
             </div>
 
-            <div class="auditorium-title">
-                <h1>AUDITORIUM</h1>
+            <div class="booking-box">
+                <div class="column">
+
+                    <div class="audi-detail">
+                        <h2>
+                            MEDICINE AUDITORIUM
+                        </h2>
+    
+                        <form>
+                                   
+                            <div class="form-group">
+                                <label for="datePicker" class="col-sm-2 col-form-label">
+                                    Desired Date
+                                </label>
+                                <div >
+                                    <input class="form-control" id="datePicker" placeholder="Desired Date"/>
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="datePicker" class="col-sm-2 col-form-label">
+                                    Time Start
+                                </label>
+                                <div >
+                                    <input class="form-control" id="datePicker" placeholder="Time Start"/>
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="datePicker" class="col-sm-2 col-form-label">
+                                    Time End
+                                </label>
+                                <div >
+                                    <input class="form-control" id="datePicker" placeholder="Time End"/>
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="inputAudi" class="col-sm-2 col-form-label">
+                                    Type of Event
+                                </label>
+                              <div>
+                                <input  type="text" class="form-control" id="inputTOE" placeholder="Type of Event">
+                              </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="inputAudi" class="col-sm-2 col-form-label">
+                                    Notes
+                                </label>
+                              <div>
+                                <textarea readonly type="text" rows="7" class="form-control" id="inputNotes" placeholder="Notes" ></textarea>
+                              </div>
+                            </div>
+               
+                            <div class="form-group-button">
+                                <div>
+                                    <a href="" type="submit" class="request-booking">
+                                        Request Booking
+                                    </a>
+                                </div>
+                              <div>
+                                <a href="{{ route('bookAudi') }}" type="submit" class="back">
+                                    Back
+                                </a>
+                              </div>
+                            </div>
+                          </form>
+    
+                    </div>  
+                </div>
+                
             </div>                 
         </div>
 
-        <section class="auditorium-section">
-            <div class="auditorium-grp">
-                <div class="auditorium-details">
-                    <h1>
-                        AUDITORIUM
-                    </h1>
-                    <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
-                </div>                
-            </div> 
-        </section>
 
-        <section class="explore-section">
-            <div class="explore-grp">
-                <div class="container">
-                    <div class="columns">
-
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-
-                        {{-- IF HINDI NA NEED NUNG STATIC UNCOMMENT TOH --}}
-                        {{-- @foreach ($auditoriums as $auditorium )
-                        <div class="column">
-        
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    {{$auditorium->name}}
-                                </h2>
-                                <p>
-                                    {{$auditorium->location}}
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-                        @endforeach --}}
-                    </div>
-                </div>
-            </div>        
-        </section>
 
         <footer class="footer">
             <p>FOOTER INFO</p>
