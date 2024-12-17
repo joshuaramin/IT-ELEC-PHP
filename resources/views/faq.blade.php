@@ -11,7 +11,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Styles / Scripts -->
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="faq.css">
 
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -64,203 +64,94 @@
                 </div>
             </div>
 
-            <div class="home-title">
-                <h1>Boundless Creativity,</h1>
-                <h1>Boundless Entertainment</h1>
+            <div class="faq-title">
+                <h1>FAQs</h1>
             </div>                 
         </div>
 
-        {{-- ABOUT US --}}
-        <section class="about-section">
-            <div class="about-grp">
-
-                <img class="home-about-img" alt="about" src="{{ asset('images/about.png') }}">
-
-                <div class="home-about-details">
+        <section class="faq-section">
+            <div class="faq-grp">
+                <div class="faq-details">
                     <h1>
-                        ABOUT US
+                        FAQs
                     </h1>
                     <p>
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
-                </div>
+                </div>                
             </div> 
         </section>
 
-        {{-- EXPLORE THE ASSEMBLYS --}}
-        <section class="explore-section">
-            <div class="explore-grp">
-                <h1 class="explore-title">
-                    EXPLORE THE ASSEMBLYS
-                </h1>
-
-                <div class="container">
-                    <div class="columns">
-
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
+        <section class="faqs-detail-section">
+            <div class="faqs-dropdown">
+                <div class="dropdown">
+                    <button onclick="myFunction1()" class="dropbtn">
+                        FAQs 1
+                    </button>
+                    <div id="myDropdown1" class="dropdown-content">
+                      <p>Text</p>
                     </div>
                 </div>
-            </div>        
-        </section>
-
-        {{-- STEPS --}}
-        <section class="steps-section">
-            <div class="steps-grp">
-                <h1 class="steps-title">
-                    STEPS OF BOOKING
-                </h1>
-
-                <div class="container">
-                    <div class="columns-steps">
-
-                        <div class="column-steps">
-                            <div>
-                                <h2>
-                                    STEP 1
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="column-steps">
-                            <div>
-                                <h2>
-                                    STEP 2
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="column-steps">
-                            <div>
-                                <h2>
-                                    STEP 3
-                                </h2>
-                            </div>
-                        </div>
-
+                <div class="dropdown">
+                    <button onclick="myFunction2()" class="dropbtn">
+                        FAQs 2
+                    </button>
+                    <div id="myDropdown2" class="dropdown-content">
+                      <p>Text</p>
                     </div>
                 </div>
-            </div>        
+                <div class="dropdown">
+                    <button onclick="myFunction3()" class="dropbtn">
+                        FAQs 3
+                    </button>
+                    <div id="myDropdown3" class="dropdown-content">
+                      <p>Text</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction4()" class="dropbtn">
+                        FAQs 4
+                    </button>
+                    <div id="myDropdown4" class="dropdown-content">
+                      <p>Text</p>
+                    </div>
+                </div>
+            </div>
+           
+
         </section>
 
-        {{-- MORE INFO --}}
-        <section class="info-section">
-            <h1>
-                MORE INFO
-            </h1>
-        </section>
-
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+              document.getElementById("myDropdown1").classList.toggle("show");
+            }
+            function myFunction2() {
+              document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            function myFunction3() {
+              document.getElementById("myDropdown3").classList.toggle("show");
+            }
+            function myFunction4() {
+              document.getElementById("myDropdown4").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+        
         <footer class="footer">
             <p>FOOTER INFO</p>
         </footer>
