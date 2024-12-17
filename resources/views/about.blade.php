@@ -11,7 +11,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Styles / Scripts -->
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="about.css">
 
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -64,19 +64,14 @@
                 </div>
             </div>
 
-            <div class="home-title">
-                <h1>Boundless Creativity,</h1>
-                <h1>Boundless Entertainment</h1>
+            <div class="about-title">
+                <h1>ABOUT US</h1>
             </div>                 
         </div>
 
-        {{-- ABOUT US --}}
         <section class="about-section">
             <div class="about-grp">
-
-                <img class="home-about-img" alt="about" src="{{ asset('images/about.png') }}">
-
-                <div class="home-about-details">
+                <div class="about-details">
                     <h1>
                         ABOUT US
                     </h1>
@@ -84,138 +79,13 @@
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
                 </div>
+                <div class="about-img-container">
+                    <img class="about-img" alt="about" src="{{ asset('images/about.png') }}">
+                </div>
+                
             </div> 
         </section>
 
-        {{-- EXPLORE THE ASSEMBLYS --}}
-        <section class="explore-section">
-            <div class="explore-grp">
-                <h1 class="explore-title">
-                    EXPLORE THE ASSEMBLYS
-                </h1>
-
-                <div class="container">
-                    <div class="columns">
-
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <button>
-                                    MORE DETAILS
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </section>
-
-        {{-- STEPS --}}
         <section class="steps-section">
             <div class="steps-grp">
                 <h1 class="steps-title">
@@ -228,7 +98,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    STEP 1
+                                    PICK A PLACE
                                 </h2>
                             </div>
                         </div>
@@ -236,7 +106,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    STEP 2
+                                    BOOK APPOINTMENT
                                 </h2>
                             </div>
                         </div>
@@ -244,22 +114,42 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    STEP 3
+                                    WAIT FOR APPROVAL
                                 </h2>
                             </div>
                         </div>
 
                     </div>
                 </div>
+
+                <div class="container">
+                    <div class="steps-details">
+                        <div class="steps-info">
+                            <div>
+                                <h2>INFO DETAILS 1</h2>
+                            </div>
+                        </div>
+                        <div class="steps-info">
+                            <div>
+                                <h2>INFO DETAILS 2</h2>
+                            </div>
+                        </div>
+                        <div class="steps-info">
+                            <div>
+                                <h2>INFO DETAILS 3</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>        
         </section>
 
-        {{-- MORE INFO --}}
-        <section class="info-section">
+        <section class="location-section">
             <h1>
-                MORE INFO
+                LOCATION
             </h1>
         </section>
+
 
         <footer class="footer">
             <p>FOOTER INFO</p>
