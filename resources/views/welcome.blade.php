@@ -210,6 +210,28 @@
                                 </button>
                             </div>
                         </div>
+
+                        {{-- IF HINDI NA NEED NUNG STATIC UNCOMMENT TOH --}}
+                        {{-- @foreach ($auditoriums as $auditorium )
+                        <div class="column">
+        
+                            <div class="column-explore-img">
+                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                            </div>
+                            
+                            <div class="column-explore-details">
+                                <h2>
+                                    {{$auditorium->name}}
+                                </h2>
+                                <p>
+                                    {{$auditorium->location}}
+                                </p>
+                                <button>
+                                    MORE DETAILS
+                                </button>
+                            </div>
+                        </div>
+                        @endforeach --}}
                     </div>
                 </div>
             </div>        
