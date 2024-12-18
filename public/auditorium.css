@@ -182,7 +182,7 @@ body {
     margin: 3px auto;
 }
 
-.column-explore-details button {
+.column-explore-details a {
     background-color: #D4BA50;
     border-radius: 15px;
     color: white;
