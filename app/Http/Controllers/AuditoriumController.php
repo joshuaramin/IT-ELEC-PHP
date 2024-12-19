@@ -4,26 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Auditorium;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuditoriumController extends Controller
 {
 
     public function index()
     {
-
-        $auditorium = Auditorium::all();
-
-        return view("", ['auditorium' => $auditorium]);
+        $auditoriums = Auditorium::paginate(20);
+        return view("showAudi", ['auditoriums' => $auditoriums]);
     }
-    public function auditorium()
-    {
-        $auditorium = Auditorium::paginate(20);
-
-        return view("admin-post", ['auditorium' => $auditorium]);
-    }
+    public function auditorium() {}
     public function create()
     {
-        return view("");
+        return view("addAudi");
     }
 
     public function show($id)
@@ -34,28 +28,30 @@ class AuditoriumController extends Controller
         if (!$auditorium) {
             dd("No record");
         }
-        return view("");
+        return view("viewAudi", compact("auditorium"));
     }
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|100',
-            'capacity' => 'required|min:1',
-            'location' => 'required|200',
-            'description' => 'max:500'
+            'title' => 'required|string|min:1|max:100',
+            'capacity' => 'required|integer|min:1',
+            'location' => 'required|string|max:200',
+            'description' => 'nullable|string|max:500',
+            'street' => 'required|string|min:1|max:100'
         ]);
 
-
         $auditorium = new Auditorium([
-            'title' => $request->title,
+            'name' => $request->title,
             'capacity' => $request->capacity,
             'location' => $request->location,
             'description' => $request->description,
-            'user_id' => $request->user()->id
+            'street' => $request->street,
+            'user_id' => Auth::id()
         ]);
 
-
         $auditorium->save();
+
+        return redirect()->route("auditorium.index")->with("success", "Auditorium created successfully");
     }
 
     public function edit($id)
@@ -65,19 +61,35 @@ class AuditoriumController extends Controller
         if (!$auditorium) {
             dd("No Record");
         }
-    }
 
+        return view("editAudi", compact('auditorium'));
+    }
     public function update(Request $request, $id)
     {
+        // Find the auditorium by its ID
         $auditorium = Auditorium::findOrFail($id);
-        $auditorium->$request->input("title");
-        $auditorium->$request->input("capacity");
-        $auditorium->$request->input("location");
-        $auditorium->description->input("description");
+
+        if (!$auditorium) {
+            return dd("No record");
+        }
+
+        $request->validate([
+            'name' => 'required|string|max:100',
+            'capacity' => 'required|integer|min:1',
+            'location' => 'required|string|max:200',
+            'description' => 'nullable|string|max:500',
+            'street' => 'required|string|max:255'
+        ]);
+
+        $auditorium->name = $request->input('name');
+        $auditorium->capacity = $request->input('capacity');
+        $auditorium->location = $request->input('location');
+        $auditorium->description = $request->input('description');
+        $auditorium->street = $request->input('street');
 
         $auditorium->save();
 
-        return redirect("/")->with("success", "Audtorium successfully updated");
+        return redirect("/auditorium/showAudi")->with("success", "Auditorium successfully updated");
     }
 
     public function delete($id)
@@ -94,6 +106,6 @@ class AuditoriumController extends Controller
         $auditorium = Auditorium::find($id);
         $auditorium->delete();
 
-        return redirect("/")->with("success", "Auditorium Successfully deleted");
+        return redirect("/auditorium/showAudi")->with("success", "Auditorium Successfully deleted");
     }
 }
