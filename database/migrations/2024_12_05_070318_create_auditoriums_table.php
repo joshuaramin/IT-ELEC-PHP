@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('auditoriums', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->default("Unnamed Auditorium");
             $table->integer('capacity')->unsigned();
             $table->string('location')->nullable();
             $table->string('description')->nullable();
+            $table->string("street")->default("Unnamed Street");
+            $table->foreignId("user_id")->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
