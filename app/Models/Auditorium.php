@@ -2,15 +2,19 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Auditorium extends Model
 {
-
+    protected $table = 'auditoriums';
+    use HasFactory;
     protected $fillable = [
+        'name',
         'capacity',
-        'title',
         'location',
-        'description'
+        'description',
+        'street',
+        'user_id',
     ];
 }

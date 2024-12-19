@@ -10,22 +10,22 @@
             @csrf
 
             <div>
-                <x-label for="name" value="{{ __('Name') }}" style="font-size: 15px; padding-bottom: 2px;"/>
+                <x-label for="name" value="{{ __('Name') }}" style="font-size: 18px; padding-bottom: 2px;"/>
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" style="margin-bottom: 5px; font-weight: 400;"/>
             </div>
 
             <div class="mt-4">
-                <x-label for="email" value="{{ __('Email') }}" style="font-size: 15px; padding-bottom: 2px;"/>
+                <x-label for="email" value="{{ __('Email') }}" style="font-size: 18px; padding-bottom: 2px;"/>
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" style="margin-bottom: 5px; font-weight: 400;"/>
             </div>
 
             <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" style="font-size: 15px; padding-bottom: 2px;"/>
+                <x-label for="password" value="{{ __('Password') }}" style="font-size: 18px; padding-bottom: 2px;"/>
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" style="margin-bottom: 5px; font-weight: 400;"/>
             </div>
 
             <div class="mt-4">
-                <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" style="font-size: 15px; padding-bottom: 2px;"/>
+                <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" style="font-size: 18px; padding-bottom: 2px;"/>
                 <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" style="margin-bottom: 5px; font-weight: 400;"/>
             </div>
 
