@@ -16,20 +16,20 @@
             @csrf
 
             <div>
-                <x-label for="email" value="{{ __('Email') }}" style="font-size: 15px; padding-bottom: 2px;"/>
+                <x-label for="email" value="{{ __('Email') }}" style="font-size: 18px; padding-bottom: 2px;"/>
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username"
                 style="margin-bottom: 5px; font-weight: 400;" />
             </div>
 
             <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" style="font-size: 15px; padding-bottom: 2px;" />
+                <x-label for="password" value="{{ __('Password') }}" style="font-size: 18px; padding-bottom: 2px;" />
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" style="margin-bottom: 5px; font-weight: 400;"/>
             </div>
 
             <div class="block mt-4">
                 <label for="remember_me" class="flex items-center">
                     <x-checkbox id="remember_me" name="remember" />
-                    <span class="ms-2 text-sm text-gray-600" style="font-size: 12px;">{{ __('Remember me') }}</span>
+                    <span class="ms-2 text-sm text-gray-600" style="font-size: 14px;">{{ __('Remember me') }}</span>
                 </label>
             </div>
 
