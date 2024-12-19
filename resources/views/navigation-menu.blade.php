@@ -22,7 +22,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('showAudi') }}" :active="request()->routeIs('showAudi')" style="font-size: 15px;">
+                    <x-nav-link href="{{ route('auditorium.index') }}" :active="request()->routeIs('showAudi')" style="font-size: 15px;">
                         {{ __('Auditorium') }}
                     </x-nav-link>
                 </div>
