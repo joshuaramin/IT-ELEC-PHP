@@ -27,7 +27,7 @@
                 <div class="inner">
                     <h1 class="logo">
                         <a title="AudiTho" href="/">
-                            <img src="{{ asset('images/AudiTho.png') }}" alt="AudiTho">                          
+                            <img src="{{ asset('images/AudiTho.png') }}" alt="AudiTho">
                         </a>
                     </h1>
                     @if (Route::has('login'))
@@ -39,12 +39,9 @@
                             <a href="{{route('about')}}" class="nav-link" > ABOUT</a>
                         </li>
                         <li>
-                            <a href="{{route('auditorium')}}" class="nav-link" >AUDITORIUM </a>
-                        </li>
-                        <li>
                             <a href="{{route('faq')}}" class="nav-link">FAQ</a>
                         </li>
-        
+
                         @auth
                         <li>
                             <a href="{{ url('/dashboard') }}" class="nav-link" >DASHBOARD</a>
@@ -67,7 +64,7 @@
             <div class="home-title">
                 <h1>Boundless Creativity,</h1>
                 <h1>Boundless Entertainment</h1>
-            </div>                 
+            </div>
         </div>
 
         {{-- ABOUT US --}}
@@ -84,10 +81,8 @@
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
                 </div>
-            </div> 
+            </div>
         </section>
-
-        {{-- EXPLORE THE ASSEMBLYS --}}
         <section class="explore-section">
             <div class="explore-grp">
                 <h1 class="explore-title">
@@ -97,128 +92,13 @@
                 <div class="container">
                     <div class="columns">
 
+                        @foreach ($auditoriums as $auditorium )
                         <div class="column">
 
                             <div class="column-explore-img">
                                 <img class="about" alt="about" src="{{ asset('images/about.png') }}">
                             </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
 
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    MEDICINE AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    EDUC AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="column">
-
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
-                            <div class="column-explore-details">
-                                <h2>
-                                    JHS AUDITORIUM
-                                </h2>
-                                <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
-                                </p>
-                                <a href="{{ route('bookAudi') }}">
-                                    MORE DETAILS
-                                </a>
-                            </div>
-                        </div>
-
-                        {{-- IF HINDI NA NEED NUNG STATIC UNCOMMENT TOH --}}
-                        {{-- @foreach ($auditoriums as $auditorium )
-                        <div class="column">
-        
-                            <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
-                            </div>
-                            
                             <div class="column-explore-details">
                                 <h2>
                                     {{$auditorium->name}}
@@ -226,15 +106,15 @@
                                 <p>
                                     {{$auditorium->location}}
                                 </p>
-                                <a href="{{ route('bookAudi') }}">
+                                <a href="{{ route('auditorium.show', $auditorium->id) }}">
                                     MORE DETAILS
                                 </a>
                             </div>
                         </div>
-                        @endforeach --}}
+                        @endforeach
                     </div>
                 </div>
-            </div>        
+            </div>
         </section>
 
         {{-- STEPS --}}
@@ -273,7 +153,7 @@
 
                     </div>
                 </div>
-            </div>        
+            </div>
         </section>
 
         {{-- MORE INFO --}}
