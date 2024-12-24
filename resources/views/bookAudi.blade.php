@@ -11,9 +11,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Styles / Scripts -->
-        <link rel="stylesheet" href="bookAudi.css">
+        <link rel="stylesheet" href="{{url('/')}}/bookAudi.css">
 
-        @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+
+       @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @else
             <style>
@@ -27,7 +28,7 @@
                 <div class="inner">
                     <h1 class="logo">
                         <a title="AudiTho" href="/">
-                            <img src="{{ asset('images/AudiTho.png') }}" alt="AudiTho">                          
+                            <img src="{{ asset('images/AudiTho.png') }}" alt="AudiTho">
                         </a>
                     </h1>
                     @if (Route::has('login'))
@@ -39,12 +40,9 @@
                             <a href="{{route('about')}}" class="nav-link" > ABOUT</a>
                         </li>
                         <li>
-                            <a href="{{route('auditorium')}}" class="nav-link" >AUDITORIUM </a>
-                        </li>
-                        <li>
                             <a href="{{route('faq')}}" class="nav-link">FAQ</a>
                         </li>
-        
+
                         @auth
                         <li>
                             <a href="{{ url('/dashboard') }}" class="nav-link" >DASHBOARD</a>
@@ -71,29 +69,26 @@
                         <h2>
                             MEDICINE AUDITORIUM
                         </h2>
-    
+
                         <div class="auditorium-details">
                             <div class="column-explore-img">
                                 <img class="about" alt="about" src="{{ asset('images/about.png') }}">
                             </div>
-    
-                            <div class="column-explore-details"> 
-                                <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        
-                                    {{--{{ $auditorium['audiDesc'] }}--}}
+
+                            <div class="column-explore-details">
+                                <p>{{ $auditorium['description'] }}
                                 </p>
                                 <br/>
                                 <p>
-                                    <strong>Location:</strong> UST Med Building {{--{{ $auditorium['location'] }}--}}
+                                    <strong>Location:</strong>{{ $auditorium['location'] }}
                                 </p>
-                                
+
                                 <p>
-                                    <strong>Capacity:</strong> 1200 {{--{{ $auditorium['capacity'] }}--}}
+                                    <strong>Capacity:</strong>  {{ $auditorium['capacity'] }}
                                 </p>
-                                
+
                                 <p>
-                                    <strong>Street:</strong> Dapitan {{--{{ $auditorium['street'] }}--}}
+                                    <strong>Street:</strong> {{ $auditorium['street'] }}
                                 </p>
                                 <br/>
                                 <a href="{{ route('bookingForm') }}">
@@ -101,11 +96,11 @@
                                 </a>
                             </div>
                         </div>
-    
-                    </div>  
+
+                    </div>
                 </div>
-                
-            </div>                 
+
+            </div>
         </div>
 
 
