@@ -6,7 +6,7 @@
     <div class="" 
     style="width: 15in;
     max-width: 45rem;
-    height: 320px;
+    height: 410px;
     margin-top: 1.5rem; 
     padding-left: 1.5rem; 
     padding-right: 1.5rem;
