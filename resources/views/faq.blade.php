@@ -27,7 +27,7 @@
                 <div class="inner">
                     <h1 class="logo">
                         <a title="AudiTho" href="/">
-                            <img src="{{ asset('images/AudiTho.png') }}" alt="AudiTho">                          
+                            <img src="{{ asset('images/AudiTho.png') }}" alt="AudiTho">
                         </a>
                     </h1>
                     @if (Route::has('login'))
@@ -39,12 +39,9 @@
                             <a href="{{route('about')}}" class="nav-link" > ABOUT</a>
                         </li>
                         <li>
-                            <a href="{{route('auditorium')}}" class="nav-link" >AUDITORIUM </a>
-                        </li>
-                        <li>
                             <a href="{{route('faq')}}" class="nav-link">FAQ</a>
                         </li>
-        
+
                         @auth
                         <li>
                             <a href="{{ url('/dashboard') }}" class="nav-link" >DASHBOARD</a>
@@ -66,7 +63,7 @@
 
             <div class="faq-title">
                 <h1>FAQs</h1>
-            </div>                 
+            </div>
         </div>
 
         <section class="faq-section">
@@ -78,8 +75,8 @@
                     <p>
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
-                </div>                
-            </div> 
+                </div>
+            </div>
         </section>
 
         <section class="faqs-detail-section">
@@ -117,12 +114,12 @@
                     </div>
                 </div>
             </div>
-           
+
 
         </section>
 
         <script>
-            /* When the user clicks on the button, 
+            /* When the user clicks on the button,
             toggle between hiding and showing the dropdown content */
             function myFunction1() {
               document.getElementById("myDropdown1").classList.toggle("show");
@@ -136,7 +133,7 @@
             function myFunction4() {
               document.getElementById("myDropdown4").classList.toggle("show");
             }
-            
+
             // Close the dropdown if the user clicks outside of it
             window.onclick = function(event) {
               if (!event.target.matches('.dropbtn')) {
@@ -151,7 +148,7 @@
               }
             }
             </script>
-        
+
         <footer class="footer">
             <p>FOOTER INFO</p>
         </footer>
