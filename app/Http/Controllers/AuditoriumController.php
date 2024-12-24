@@ -14,11 +14,34 @@ class AuditoriumController extends Controller
         $auditoriums = Auditorium::paginate(20);
         return view("showAudi", ['auditoriums' => $auditoriums]);
     }
-    public function auditorium() {}
+    // public function auditorium()
+    // {
+    //     $auditoriums = Auditorium::paginate(20);
+    //     return view("auditorium", ['auditoriums' => $auditoriums]);
+    // }
+
+    public function welcome()
+    {
+        $auditoriums = Auditorium::paginate(20);
+
+        return view("welcome", ['auditoriums' => $auditoriums]);
+    }
+    public function auditoriumshow($id)
+    {
+        $auditorium = Auditorium::find($id);
+
+        if (!$auditorium) {
+            dd("No record");
+        }
+        return view("bookAudi", compact("auditorium"));
+    }
+
+
     public function create()
     {
         return view("addAudi");
     }
+
 
     public function show($id)
     {
