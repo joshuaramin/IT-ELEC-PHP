@@ -7,8 +7,9 @@
         <title>AudiTho</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
         <!-- Styles / Scripts -->
         <link rel="stylesheet" href="faq.css">
@@ -62,18 +63,16 @@
             </div>
 
             <div class="faq-title">
-                <h1>FAQs</h1>
+                <h1><strong>FAQs</strong></h1>
             </div>
         </div>
 
         <section class="faq-section">
             <div class="faq-grp">
                 <div class="faq-details">
-                    <h1>
-                        FAQs
-                    </h1>
+                   
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        When booking an event, it's essential to gather all the necessary details to ensure that the event goes smoothly. Here are some common Frequently Asked Questions (FAQs) to consider:
                     </p>
                 </div>
             </div>
@@ -83,36 +82,54 @@
             <div class="faqs-dropdown">
                 <div class="dropdown">
                     <button onclick="myFunction1()" class="dropbtn">
-                        FAQs 1
+                        How do I book the auditorium?
                     </button>
                     <div id="myDropdown1" class="dropdown-content">
-                      <p>Text</p>
+                      <p>You can book the auditorium through this website AudiTho , Many venues require filling out a booking form to set the date of your certain events.</p>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button onclick="myFunction2()" class="dropbtn">
-                        FAQs 2
+                        What are the available dates and times for booking?
                     </button>
                     <div id="myDropdown2" class="dropdown-content">
-                      <p>Text</p>
+                      <p>Dates and times will vary depending on the venue's schedule. It’s recommended to inquire about availability well in advance, especially for peak times.</p>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button onclick="myFunction3()" class="dropbtn">
-                        FAQs 3
+                        What equipment is included in the auditorium?
                     </button>
                     <div id="myDropdown3" class="dropdown-content">
-                      <p>Text</p>
+                      <p>Most auditoriums come with basic audio-visual equipment, such as microphones, speakers, and projectors. It's important to clarify what’s included in the rental and if any additional equipment.</p>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button onclick="myFunction4()" class="dropbtn">
-                        FAQs 4
+                        Can I decorate the auditorium?
                     </button>
                     <div id="myDropdown4" class="dropdown-content">
-                      <p>Text</p>
+                      <p>Many venues allow decorations but may have restrictions (such as not using nails or tape on walls). Always ask about the venue's decoration policy to avoid any issues.</p>
                     </div>
                 </div>
+                <div class="dropdown">
+                    <button onclick="myFunction5()" class="dropbtn">
+                        Do you provide technical support during the event?
+                    </button>
+                    <div id="myDropdown5" class="dropdown-content">
+                      <p>Many venues offer on-site technical support for audio-visual equipment, sound checks, and any issues that may arise during the event.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction6()" class="dropbtn">
+                        How many people can the auditorium accommodate?
+                    </button>
+                    <div id="myDropdown6" class="dropdown-content">
+                      <p>Capacity depends on the size of the auditorium. The venue will provide specific details about seating arrangements.</p>
+                    </div>
+                </div>
+
+                
             </div>
 
 
@@ -133,6 +150,12 @@
             function myFunction4() {
               document.getElementById("myDropdown4").classList.toggle("show");
             }
+            function myFunction5() {
+              document.getElementById("myDropdown5").classList.toggle("show");
+            }
+            function myFunction6() {
+              document.getElementById("myDropdown6").classList.toggle("show");
+            }
 
             // Close the dropdown if the user clicks outside of it
             window.onclick = function(event) {
@@ -150,7 +173,20 @@
             </script>
 
         <footer class="footer">
-            <p>FOOTER INFO</p>
+            <p>
+                <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829      
+             </p>
+             <p>
+                <strong>  ⏱ Office Hours: </strong> Monday to Friday : 9:00 AM to 6:00 PM
+            </p>
+          <p>
+           <strong> ⚲ Visit Us:  </strong> Espana Blvd., Sampaloc, Manila, Philippines 1008                                  
+          </p>
+          <br> </br> 
+          <p> 
+            © 2024. University of Santo Tomas. Powered by Santo Tomas e-Service Providers.
+          </p>
+        
         </footer>
     </body>
 </html>
