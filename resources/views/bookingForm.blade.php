@@ -7,8 +7,9 @@
         <title>AudiTho</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
         <!-- Styles / Scripts -->
         <link rel="stylesheet" href="bookingForm.css">
@@ -133,7 +134,20 @@
 
 
         <footer class="footer">
-            <p>FOOTER INFO</p>
+            <p>
+                <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829      
+             </p>
+             <p>
+                <strong>  ⏱ Office Hours: </strong> Monday to Friday : 9:00 AM to 6:00 PM
+            </p>
+          <p>
+           <strong> ⚲ Visit Us:  </strong> Espana Blvd., Sampaloc, Manila, Philippines 1008                                  
+          </p>
+          <br> </br> 
+          <p> 
+            © 2024. University of Santo Tomas. Powered by Santo Tomas e-Service Providers.
+          </p>
+        
         </footer>
     </body>
 </html>
