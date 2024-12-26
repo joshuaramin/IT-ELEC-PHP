@@ -136,9 +136,19 @@
                     <div class="columns-steps">
 
                         <div class="column-steps">
+                            <div class="column-front">
+                                <h2>
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/1.png') }}">
+                                    
+                                </h2>
+                            </div>
+                            
+                        </div>
+
+                        <div class="column-steps">
                             <div>
                                 <h2>
-                                    STEP 1 
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/2.png') }}">
                                 </h2>
                             </div>
                         </div>
@@ -146,15 +156,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    STEP 2
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="column-steps">
-                            <div>
-                                <h2>
-                                    STEP 3
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/3.png') }}">
                                 </h2>
                             </div>
                         </div>

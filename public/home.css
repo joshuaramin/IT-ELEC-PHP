@@ -285,6 +285,12 @@ body {
     height: 400px;
 }
 
+.column-steps-img{
+    margin-top: -50px;
+    object-position: left top;
+}
+
+
 .column-steps div {
     margin: 5px 30px;
     text-align: center;
