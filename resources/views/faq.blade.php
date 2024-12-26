@@ -150,7 +150,20 @@
             </script>
 
         <footer class="footer">
-            <p>FOOTER INFO</p>
+            <p>
+                <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829      
+             </p>
+             <p>
+                <strong>  ⏱ Office Hours: </strong> Monday to Friday : 9:00 AM to 6:00 PM
+            </p>
+          <p>
+           <strong> ⚲ Visit Us:  </strong> Espana Blvd., Sampaloc, Manila, Philippines 1008                                  
+          </p>
+          <br> </br> 
+          <p> 
+            © 2024. University of Santo Tomas. Powered by Santo Tomas e-Service Providers.
+          </p>
+        
         </footer>
     </body>
 </html>
