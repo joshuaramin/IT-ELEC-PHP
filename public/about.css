@@ -1,5 +1,5 @@
 body {
-    font-family: 'Baskerville';
+    font-family: 'Inter';
     margin: 0;
     padding: 0;
 }
@@ -67,7 +67,7 @@ body {
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
-    font-family: 'Baskerville';
+    font-family: 'Inter';
     color: #fff;
     text-decoration: none;
 }
@@ -292,3 +292,10 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+.inter{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }

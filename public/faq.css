@@ -1,5 +1,5 @@
 body {
-    font-family: 'Baskerville';
+    font-family: 'Inter';
     margin: 0;
     padding: 0;
 }
@@ -67,7 +67,7 @@ body {
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
-    font-family: 'Baskerville';
+    font-family: 'Inter';
     color: #fff;
     text-decoration: none;
 }
@@ -115,16 +115,17 @@ body {
 }
 
 .faq-details p {
-    font-size: 27px;
-    font-weight: 100;
-    margin-bottom: 35px;
+    font-size: 20px;
+    margin-bottom: -200px;
+    font-style: normal;
+    text-align: center;
 }
 
 .faqs-detail-section {
     background-color: #D4BA50;
     height: auto;
     width: 100%;
-    padding: 80px 0px;
+    padding: 40px 0px;
 }
 
 .faqs-dropdown {
@@ -195,3 +196,11 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+
+.inter{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
