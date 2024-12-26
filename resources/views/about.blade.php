@@ -40,7 +40,7 @@
                             <a href="{{route('about')}}" class="nav-link" > ABOUT</a>
                         </li>
                         <li>
-                            <a href="{{route('auditorium')}}" class="nav-link" >AUDITORIUM </a>
+                            
                         </li>
                         <li>
                             <a href="{{route('faq')}}" class="nav-link">FAQ</a>
@@ -73,11 +73,8 @@
         <section class="about-section">
             <div class="about-grp">
                 <div class="about-details">
-                    <h1>
-                        ABOUT US
-                    </h1>
                     <p>
-                        "You can use this website to book an event at the University of Santo Tomas Auditoriums . Provide details such as the event type, date, and expected number of attendees. Each auditorium is equipped for various events like conferences, performances, and academic programs. Early reservations are recommended due to high demand, especially during peak academic seasons."
+                        You can use this website to book an event at the University of Santo Tomas Auditoriums . Provide details such as the event type, date, and expected number of attendees. Each auditorium is equipped for various events like conferences, performances, and academic programs. Early reservations are recommended due to high demand, especially during peak academic seasons.
                     </p>
                 </div>
                 <div class="about-img-container">
@@ -99,7 +96,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    PICK A PLACE
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/1.png') }}">
                                 </h2>
                             </div>
                         </div>
@@ -107,7 +104,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    BOOK APPOINTMENT
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/2.png') }}">
                                 </h2>
                             </div>
                         </div>
@@ -115,7 +112,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    WAIT FOR APPROVAL
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/3.png') }}">
                                 </h2>
                             </div>
                         </div>
