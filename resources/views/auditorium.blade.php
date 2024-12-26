@@ -91,15 +91,17 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/med audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
                                 <h2>
-                                    MEDICINE AUDITORIUM
+                                    UST MEDICINE AUDITORIUM
                                 </h2>
                                 <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
+                                    Building: 4th Floor, San Martin de Porres Building 
+                                    Capacity: 1,200-1,300 pax
+                                    Street: Dapitan
                                 </p>
 
                             </div>
@@ -108,15 +110,17 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/educ audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
                                 <h2>
-                                    EDUC AUDITORIUM
+                                    ALBERTUS MAGNUS AUDITORIUM
                                 </h2>
                                 <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
+                                    Building: 5th Floor, Albertus Magnus Building
+                                    Capacity: 500-800 pax
+                                    Street: Lacson
                                 </p>
 
                             </div>
@@ -125,15 +129,17 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/tarp.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
                                 <h2>
-                                    JHS AUDITORIUM
+                                    CENTRAL LABORATORY AUDITORIUM 
                                 </h2>
                                 <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
+                                    Building: 8th Floor,Central Laboratory Building
+                                    Capacity: 300-500 pax
+                                    Street: Padre Noval
                                 </p>
 
                             </div>
@@ -142,15 +148,17 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/jhs audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
                                 <h2>
-                                    MEDICINE AUDITORIUM
+                                    MIGUEL DE BENAVIDES AUDITORIUM 
                                 </h2>
                                 <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
+                                    Building: 3rd Floor, Benavides Building
+                                    Capacity: 150-250 pax
+                                    Street: Dapitan
                                 </p>
 
                             </div>
@@ -159,15 +167,17 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/frat audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
                                 <h2>
-                                    EDUC AUDITORIUM
+                                    BL PIER GIORGIO FRASSATI AUDITORIUM
                                 </h2>
                                 <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
+                                    Building: 21th Floor,  BL PIER GIORGIO FRASSATI Building
+                                    Capacity: 900-1000 pax
+                                    Street: Espana
                                 </p>
 
                             </div>
@@ -176,15 +186,17 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/eng audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
                                 <h2>
-                                    JHS AUDITORIUM
+                                    ENGINEERING CONFERENCE HALL
                                 </h2>
                                 <p>
-                                    1008 España Blvd, Sampaloc, Manila, 1015 Metro Manila
+                                    Building: Fr. Roque Ruano Building
+                                    Capacity: 1,200-1,300 pax
+                                    Street: Lacson
                                 </p>
 
                             </div>
