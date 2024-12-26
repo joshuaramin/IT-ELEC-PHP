@@ -7,8 +7,9 @@
         <title>AudiTho</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
         <!-- Styles / Scripts -->
         <link rel="stylesheet" href="about.css">
@@ -39,7 +40,7 @@
                             <a href="{{route('about')}}" class="nav-link" > ABOUT</a>
                         </li>
                         <li>
-                            <a href="{{route('auditorium')}}" class="nav-link" >AUDITORIUM </a>
+                            
                         </li>
                         <li>
                             <a href="{{route('faq')}}" class="nav-link">FAQ</a>
@@ -72,11 +73,8 @@
         <section class="about-section">
             <div class="about-grp">
                 <div class="about-details">
-                    <h1>
-                        ABOUT US
-                    </h1>
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        You can use this website to book an event at the University of Santo Tomas Auditoriums . Provide details such as the event type, date, and expected number of attendees. Each auditorium is equipped for various events like conferences, performances, and academic programs. Early reservations are recommended due to high demand, especially during peak academic seasons.
                     </p>
                 </div>
                 <div class="about-img-container">
@@ -98,7 +96,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    PICK A PLACE
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/1.png') }}">
                                 </h2>
                             </div>
                         </div>
@@ -106,7 +104,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    BOOK APPOINTMENT
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/2.png') }}">
                                 </h2>
                             </div>
                         </div>
@@ -114,7 +112,7 @@
                         <div class="column-steps">
                             <div>
                                 <h2>
-                                    WAIT FOR APPROVAL
+                                    <img class="column-steps-img" alt="steps" src="{{ asset('images/3.png') }}">
                                 </h2>
                             </div>
                         </div>
@@ -152,7 +150,20 @@
 
 
         <footer class="footer">
-            <p>FOOTER INFO</p>
+            <p>
+                <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829      
+             </p>
+             <p>
+                <strong>  ⏱ Office Hours: </strong> Monday to Friday : 9:00 AM to 6:00 PM
+            </p>
+          <p>
+           <strong> ⚲ Visit Us:  </strong> Espana Blvd., Sampaloc, Manila, Philippines 1008                                  
+          </p>
+          <br> </br> 
+          <p> 
+            © 2024. University of Santo Tomas. Powered by Santo Tomas e-Service Providers.
+          </p>
+        
         </footer>
     </body>
 </html>
