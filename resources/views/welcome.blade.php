@@ -78,7 +78,16 @@
                         ABOUT US
                     </h1>
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "The University of Santo Tomas in Manila, Philippines, features several auditoriums within its campus, each serving as a venue for academic, cultural, and extracurricular activities. Notable auditoriums include:
+
+                       <strong> •	UST Medicine Auditorium </strong>
+                       <strong> •	Albertus Magnus Auditorium</strong>
+                       <strong> •	Central Laboratory Auditorium </strong>
+                       <strong> •	Miguel De Benavides Auditorium  </strong>
+                       <strong> •	BL Pier Giorgio Frassati Auditorium </strong>
+                       <strong> •	Engineering Conference Hall </strong>
+                        
+                       Each auditorium is equipped to support a range of university functions, from lectures and conferences to performances and ceremonies."
                     </p>
                 </div>
             </div>

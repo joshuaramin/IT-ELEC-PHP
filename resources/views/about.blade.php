@@ -76,7 +76,7 @@
                         ABOUT US
                     </h1>
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "You can use this website to book an event at the University of Santo Tomas Auditoriums . Provide details such as the event type, date, and expected number of attendees. Each auditorium is equipped for various events like conferences, performances, and academic programs. Early reservations are recommended due to high demand, especially during peak academic seasons."
                     </p>
                 </div>
                 <div class="about-img-container">
