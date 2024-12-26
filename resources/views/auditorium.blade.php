@@ -91,7 +91,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/med audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
@@ -110,7 +110,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/educ audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
@@ -129,7 +129,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/tarp.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
@@ -148,7 +148,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/jhs audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
@@ -167,7 +167,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/frat audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
@@ -186,7 +186,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{ asset('images/eng audi.jpg') }}">
                             </div>
 
                             <div class="column-explore-details">
