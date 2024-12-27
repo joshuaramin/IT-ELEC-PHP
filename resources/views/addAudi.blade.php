@@ -31,7 +31,7 @@
                   @csrf
                   <div class="form-group" style="padding: 10px 50px 20px;">
                     <label for="uploadAudi" class="form-label" style="padding-bottom: 5px; font-weight:bolder; font-size: 17px;">Auditorium Image</label>
-                    <input class="form-control" type="file" id="formFile" style="font-size: 17px; width: 95%; border-radius: 10px; overflow:hidden; border:1px solid #4d4642;">
+                    <input class="form-control" name="image" type="file" id="formFile" style="font-size: 17px; width: 95%; border-radius: 10px; overflow:hidden; border:1px solid #4d4642;">
                   </div>
 
                   <div class="form-group" style="padding: 10px 50px 20px;">
