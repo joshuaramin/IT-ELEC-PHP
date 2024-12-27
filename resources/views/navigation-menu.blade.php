@@ -11,21 +11,33 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" style="font-size: 15px;">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('booking') }}" :active="request()->routeIs('booking')" style="font-size: 15px;">
-                        {{ __('Booking') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('auditorium.index') }}" :active="request()->routeIs('showAudi')" style="font-size: 15px;">
-                        {{ __('Auditorium') }}
-                    </x-nav-link>
-                </div>
+
+                @if(Auth::check() && Auth::user()->role ==="users")
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link href="{{ route('mybooking.list') }}" :active="request()->routeIs('mybooking')" style="font-size: 15px;">
+                            {{ __('My Booking') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+                @if(Auth::check() && Auth::user()->role === 'admins')
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" style="font-size: 15px;">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                    </div>
+
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link href="{{ route('booking') }}" :active="request()->routeIs('booking')" style="font-size: 15px;">
+                            {{ __('Booking') }}
+                        </x-nav-link>
+                    </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link href="{{ route('auditorium.index') }}" :active="request()->routeIs('showAudi')" style="font-size: 15px;">
+                            {{ __('Auditorium') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">

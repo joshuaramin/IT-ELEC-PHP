@@ -12,6 +12,7 @@ class BookingController extends Controller
     public function index() {}
 
 
+
     public function bookForm($id)
     {
         $booking = Auditorium::find($id);
@@ -24,9 +25,18 @@ class BookingController extends Controller
     }
     public function booking(Request $request)
     {
-        $booking = Booking::where("user_id", $request->user()->id)->with("user")->paginate(20);
+        $bookings = Booking::with('auditorium')->paginate(20);
 
-        return view("booking", ['booking', $booking]);
+        return view("booking", compact("bookings"));
+    }
+    public function bookShow($id)
+    {
+        $bookings = Booking::find($id);
+        if (!$bookings) {
+            dd("There are no records");
+        }
+
+        return view("showBooking", compact("bookings"));
     }
     public function edit($id)
     {
@@ -61,7 +71,25 @@ class BookingController extends Controller
 
         return redirect()->route("auditorium.show", $id)->with("success", "Booking created successfully");
     }
-    public function update(Request $request, $id) {}
+    public function update(Request $request, $id)
+    {
+        $booking = Booking::findOrFail($id);
+
+        if (!$booking) {
+            return dd("No record");
+        }
+
+
+        $request->validate([
+            'status' => 'required'
+        ]);
+
+        $booking->status = $request->input("status");
+
+        $booking->save();
+
+        return redirect("/booking")->with("success", "Booking Status is updated");
+    }
     public function delete()
     {
         return view("delete_booking");

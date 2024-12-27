@@ -60,8 +60,14 @@ class AuditoriumController extends Controller
             'capacity' => 'required|integer|min:1',
             'location' => 'required|string|max:200',
             'description' => 'nullable|string|max:500',
-            'street' => 'required|string|min:1|max:100'
+            'street' => 'required|string|min:1|max:100',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048|required'
         ]);
+
+        $imagePath = null;
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('auditoriums', 'public');
+        }
 
         $auditorium = new Auditorium([
             'name' => $request->title,
@@ -69,7 +75,8 @@ class AuditoriumController extends Controller
             'location' => $request->location,
             'description' => $request->description,
             'street' => $request->street,
-            'user_id' => Auth::id()
+            'user_id' => Auth::id(),
+            'image' => $imagePath,
         ]);
 
         $auditorium->save();
