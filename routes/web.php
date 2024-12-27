@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuditoriumController;
+use App\Http\Controllers\BookingController;
 use App\Models\Auditorium;
 use Illuminate\Support\Facades\Route;
 
@@ -24,40 +25,43 @@ Route::get("/bookingForm", function () {
     return view("bookingForm");
 })->name("bookingForm");
 
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+
+Route::get("/booking", function () {
+    return view("booking");
+})->name("booking");
+
+Route::prefix("auditorium")->group(function () {
+    Route::get('/showAudi', [AuditoriumController::class, 'index'])->name('auditorium.index');
+    Route::get("/editAudi/{id}", [AuditoriumController::class, "edit"])->name("auditorium.edit");
+    Route::put("/editAudi/{id}", [AuditoriumController::class, "update"])->name("auditorium.update");
+    Route::get("/showAudi/{id}", [AuditoriumController::class, "show"])->name("auditorium.view");
+    Route::delete("/showAudi/{id}", [AuditoriumController::class, 'destroy'])->name("auditorium.delete");
+    Route::get(
+        '/create',
+        [AuditoriumController::class, "create"]
+    )->name('auditorium.create');
+    Route::post(
+        '/create',
+        [AuditoriumController::class, "store"]
+    )->name('auditorium.store');
+});
+Route::get('/booking', function () {
+    return view('booking');
+})->name('booking');
+
+Route::get('/showBooking', function () {
+    return view('showBooking');
+})->name('showBooking');
+
 Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
+    'role:admin',
+])->group(function () {});
 
-    Route::prefix("auditorium")->group(function () {
-        Route::get('/showAudi', [AuditoriumController::class, 'index'])->name('auditorium.index');
-        Route::get("/editAudi/{id}", [AuditoriumController::class, "edit"])->name("auditorium.edit");
-        Route::put("/editAudi/{id}", [AuditoriumController::class, "update"])->name("auditorium.update");
-        Route::get("/showAudi/{id}", [AuditoriumController::class, "show"])->name("auditorium.view");
-        Route::delete("/showAudi/{id}", [AuditoriumController::class, 'destroy'])->name("auditorium.delete");
-        Route::get(
-            '/create',
-            [AuditoriumController::class, "create"]
-        )->name('auditorium.create');
-        Route::post(
-            '/create',
-            [AuditoriumController::class, "store"]
-        )->name('auditorium.store');
-    });
-    Route::get('/booking', function () {
-        return view('booking');
-    })->name('booking');
-
-    Route::get('/showBooking', function () {
-        return view('showBooking');
-    })->name('showBooking');
-});
-
-
-
-Route::middleware(['roleAuth:user'])->group(function () {
-    Route::get('/bookingForm', function () {
-        return view('bookingForm');
-    })->name('bookingForm');
-});
+Route::get('/bookingForm/create/{id}', [BookingController::class, "bookForm"])->name('bookingForm');
+Route::post('/bookingForm/create/{id}', [BookingController::class, "store"])->name("booking.store");
+Route::middleware(['role:user'])->group(function () {});

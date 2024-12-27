@@ -68,7 +68,7 @@
 
                     <div class="audi-detail">
                         <h2>
-                            MEDICINE AUDITORIUM
+                            {{ $auditorium['name'] }}
                         </h2>
 
                         <div class="auditorium-details">
@@ -92,7 +92,7 @@
                                     <strong>Street:</strong> {{ $auditorium['street'] }}
                                 </p>
                                 <br/>
-                                <a href="{{ route('bookingForm') }}">
+                                <a href="{{ route('bookingForm', $auditorium->id) }}">
                                     BOOK AN EVENT
                                 </a>
                             </div>
@@ -108,19 +108,19 @@
 
         <footer class="footer">
             <p>
-                <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829      
+                <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829
              </p>
              <p>
                 <strong>  ⏱ Office Hours: </strong> Monday to Friday : 9:00 AM to 6:00 PM
             </p>
           <p>
-           <strong> ⚲ Visit Us:  </strong> Espana Blvd., Sampaloc, Manila, Philippines 1008                                  
+           <strong> ⚲ Visit Us:  </strong> Espana Blvd., Sampaloc, Manila, Philippines 1008
           </p>
-          <br> </br> 
-          <p> 
+          <br> </br>
+          <p>
             © 2024. University of Santo Tomas. Powered by Santo Tomas e-Service Providers.
           </p>
-        
+
         </footer>
     </body>
 </html>

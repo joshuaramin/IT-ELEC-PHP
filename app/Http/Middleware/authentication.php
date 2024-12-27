@@ -17,20 +17,27 @@ class authentication
     public function handle(Request $request, Closure $next, $role): Response
     {
         if (!Auth::check()) {
-            return redirect("/");
+            return redirect('/');
         }
+
         $userRole = Auth::user()->role;
 
-        if ($userRole === 'user') {
-            return redirect("/user/dashboard");
-        } elseif ($userRole === 'admin') {
-            return redirect("/admin/dashboard");
+        // Define role-based redirections
+        $roleRedirects = [
+            'users' => '/user/dashboard',
+            'admins' => '/dashboard',
+        ];
+
+        // Redirect if the user's role matches one in the redirects array
+        if (array_key_exists($userRole, $roleRedirects)) {
+            return redirect($roleRedirects[$userRole]);
         }
 
-        // Allow access to other roles if required
+        // Deny access if roles do not match
         if ($userRole !== $role) {
-            return redirect("/");
+            return redirect('/');
         }
+
         return $next($request);
     }
 }
