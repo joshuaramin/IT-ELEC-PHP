@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuditoriumController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\UserController;
 use App\Models\Auditorium;
 use Illuminate\Support\Facades\Route;
 
@@ -31,9 +32,10 @@ Route::get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get("/booking", function () {
-    return view("booking");
-})->name("booking");
+Route::get("/mybooking", [UserController::class, "GetMyBookings"])->name("mybooking.list");
+Route::get("/mybooking/{id}", [UserController::class, "GetBookingId"])->name("specificbooking");
+
+Route::get("/booking", [BookingController::class, "booking"])->name("booking");
 
 Route::prefix("auditorium")->group(function () {
     Route::get('/showAudi', [AuditoriumController::class, 'index'])->name('auditorium.index');
@@ -50,13 +52,9 @@ Route::prefix("auditorium")->group(function () {
         [AuditoriumController::class, "store"]
     )->name('auditorium.store');
 });
-Route::get('/booking', function () {
-    return view('booking');
-})->name('booking');
 
-Route::get('/showBooking', function () {
-    return view('showBooking');
-})->name('showBooking');
+Route::get('/showBooking/{id}', [BookingController::class, "bookShow"])->name('showBooking');
+Route::put('/showBooking/{id}', [BookingController::class, "update"])->name('showBooking');
 
 Route::middleware([
     'role:admin',

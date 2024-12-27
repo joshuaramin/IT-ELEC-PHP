@@ -26,7 +26,7 @@
                         <label for="uploadAudi" class="form-label" style="padding-bottom: 15px; font-weight:bolder; font-size: 17px;">
                             Auditorium Image
                         </label>
-                      <img {{--src="{{ asset($auditorium['image']) }}"--}} src="{{ asset('images/about.png') }}"alt="Auditorium Image" style="width:50%; height:auto; display:block; margin:auto; filter: drop-shadow(0px 0px 4px #4d4642); padding-bottom: 20px;">
+                      <img src="{{  asset('storage/' . $auditorium->image) }}" alt="Auditorium Image" style="width:50%; height:auto; display:block; margin:auto; filter: drop-shadow(0px 0px 4px #4d4642); padding-bottom: 20px;">
                     </div>
 
                     <div class="form-group" style="padding: 10px 50px 20px;">

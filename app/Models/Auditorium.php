@@ -16,6 +16,7 @@ class Auditorium extends Model
         'description',
         'street',
         'user_id',
+        'image',
     ];
 
 

@@ -35,9 +35,9 @@
                     </thead>
                     <tbody>
                     @foreach ($auditoriums as $audi)
-                    <tr style="width: 100%">
-                        <td style="width: 250px;">
-                            <img src="{{ asset($audi->image) }}" style="width:70px; height:auto; margin: 0 auto; display: block;">
+                    <tr style="width: 100%; height: 150px;">
+                        <td style="width: 300px;">
+                            <img src="{{  asset('storage/' . $audi->image) }}" style="width:70px; height:auto; margin: 0 auto; display: block;">
                         </td>
                         <td style="text-align: center; padding: 5px; width: 200px;">{{ $audi->name }}</td>
                         <td style="text-align: center; padding: 5px; width: 250px;">{{ $audi->location }}</td>
