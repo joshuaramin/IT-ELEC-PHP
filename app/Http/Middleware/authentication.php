@@ -24,7 +24,7 @@ class authentication
 
         // Define role-based redirections
         $roleRedirects = [
-            'users' => '/user/dashboard',
+            'users' => '/mybooking',
             'admins' => '/dashboard',
         ];
 

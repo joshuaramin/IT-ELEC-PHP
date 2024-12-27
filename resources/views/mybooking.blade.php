@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="flex justify-between">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight" style="font-weight:400; font-family: 'Baskerville';">
-                {{ __('Booking')}}
+                {{ __('My Booking')}}
             </h2>
 
             <a href="/" style="text-decoration: none; color: #D4BA50; font-weight: 600; font-size: 15px;">
@@ -34,28 +34,26 @@
                       </tr>
                     </thead>
                     <tbody>
-                        @foreach ($bookings as $book)
+                        @foreach ($bookings as $booking)
                         <tr>
-
-                            <th style="text-align: center;">{{ $book['id'] }}</th>
-                            <td><img src="{{  asset('storage/' . $book->auditorium->image) }}" style="width:70px; height:auto; margin: 0 auto; display: block;"></td>
-                            <td style="text-align: center;">{{ $book->auditorium->name  }}</td>
-                            <td style="text-align: center;">{{ $book['desiredTime'] }}</td>
-                            <td style="text-align: center;">{{ $book['start_time'] }}</td>
-                            <td style="text-align: center;">{{ $book['end_time'] }}</td>
-                            <td style="text-align: center;">{{ $book['event'] }}</td>
-                            <td style="text-align: center;">{{ $book['notes'] }}</td>
-                            <td style="text-align: center;">{{ $book['status'] }}</td>
+                            <th style="text-align: center;">{{ $booking['id'] }}</th>
+                            <td><img src="{{ asset($booking['image']) }}" style="width:70px; height:auto; margin: 0 auto; display: block;"></td>
+                            <td style="text-align: center;">{{ $booking->auditorium->name  }}</td>
+                            <td style="text-align: center;">{{ $booking['desiredTime'] }}</td>
+                            <td style="text-align: center;">{{ $booking['start_time'] }}</td>
+                            <td style="text-align: center;">{{ $booking['end_time'] }}</td>
+                            <td style="text-align: center;">{{ $booking['event'] }}</td>
+                            <td style="text-align: center;">{{ $booking['notes'] }}</td>
+                            <td style="text-align: center;">{{ $booking['status'] }}</td>
                             <td style="text-align: center;">
                                <div style="display: flex; justify-content: center; align-items: center;">
-                                    <a href="{{ route('showBooking', $book['id']) }}" type="button" class="btn btn-primary" style="background-color:#78ade4; border: none; padding: 5px 10px; border-radius: 10px;">
+                                    <a href="{{ route('showBooking', $booking->id) }}" type="button" class="btn btn-primary" style="background-color:#78ade4; border: none; padding: 5px 10px; border-radius: 10px;">
                                         View
                                     </a>
                                 </div>
                             </td>
                         </tr>
                         @endforeach
-
                     </tbody>
                   </table>
             </div>

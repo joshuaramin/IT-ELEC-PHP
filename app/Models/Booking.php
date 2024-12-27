@@ -28,6 +28,6 @@ class Booking extends Model
 
     public function Auditorium()
     {
-        return $this->belongsTo(Auditorium::class);
+        return $this->belongsTo(Auditorium::class, 'auditoriums_id');
     }
 }
