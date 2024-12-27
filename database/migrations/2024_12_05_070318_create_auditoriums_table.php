@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string("street")->default("Unnamed Street");
             $table->foreignId("user_id")->constrained()->onDelete('cascade');
+            $table->foreignId("bookings_id")->nullable();
             $table->timestamps();
         });
     }
