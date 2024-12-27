@@ -17,4 +17,10 @@ class Auditorium extends Model
         'street',
         'user_id',
     ];
+
+
+    public function Bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }
