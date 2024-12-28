@@ -104,7 +104,7 @@
                         <div class="column">
 
                             <div class="column-explore-img">
-                                <img class="about" alt="about" src="{{ asset('images/about.png') }}">
+                                <img class="about" alt="about" src="{{  asset('storage/' . $auditorium->image) }}">
                             </div>
 
                             <div class="column-explore-details">
