@@ -81,6 +81,7 @@ body {
     flex-direction: column;
     font-size: 60px;
     color: white;
+    font-family: 'Baskerville';
 }
 
 .about-section {
@@ -115,10 +116,11 @@ body {
 }
 
 .about-details p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 70px;
     font-style: normal;
     text-align: center;
+    font-family: 'Baskerville';
 }
 
 /* Media Queries for Responsiveness */
@@ -252,7 +254,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding: 60px;
 }
@@ -268,16 +270,32 @@ body {
 
 .steps-info div {
     margin: 5px 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 .steps-info h2 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 55px;
     color: #D4BA50;
+    text-align: center;
 }
 
-.location-section {
+.steps-info p, ul {
+    font-size: 20px;
+    font-family: 'Baskerville';
+    font-weight: 100;
+}
+
+.steps-info ul {
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+.steps-info ul li strong {
+    font-weight: 500;
+}
+
+/* .location-section {
     background-color: #D4BA50;
     height: auto;
     width: 100%;
@@ -290,7 +308,7 @@ body {
     font-weight: 400;
     margin: 5px 0px;
     text-align: center;
-}
+} */
 
 .footer {
     background-color: black;
