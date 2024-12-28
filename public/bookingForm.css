@@ -79,7 +79,7 @@ body {
         width: 100%;
         height: 10.5in;
         margin: 0 auto;
-        padding: 130px 50px;
+        padding: 130px 0px;
         justify-content: center;
     }
 
@@ -187,7 +187,9 @@ body {
     border-radius: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 100%;
+    width: 85%;
+    font-family: 'Baskerville';
+    height: 85%;
 }
 
 .audi-detail {
@@ -213,7 +215,6 @@ body {
 }
 
 .form-group label {
-    padding-bottom: 5px;
     font-weight: 500;
     font-size: 17px;
 }
@@ -222,13 +223,20 @@ body {
     font-size: 17px;
     width: 95%;
     border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-family: 'Baskerville';
 }
 
 .form-group textarea {
     font-size: 17px; 
-    width: 95%; 
+    width: 96%; 
     border-radius: 10px; 
     resize:none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    font-family: 'Baskerville';
 }
 
 .form-group-button {
@@ -241,13 +249,15 @@ body {
 
 .request-booking {
     font-size: 20px;
-    width: 10%;
+    width: 100%;
     background-color: #eaaa51; /* Default button color */
     border: #eaaa51; /* Default button border color */
     margin: auto;
     padding: 10px 15px;
     text-align: center;
     border-radius: 10px;
+    font-family: 'Baskerville';
+    font-weight: 400;
 }
 
 .back {
@@ -259,6 +269,8 @@ body {
     border-radius: 10px;
     background-color: #969593; /* Back button color */
     border: #969593; /* Back button border color */
+    text-decoration: none;
+    color: black;
 }
 
 .footer {

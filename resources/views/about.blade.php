@@ -124,23 +124,23 @@
                     <div class="steps-details">
                         <div class="steps-info">
                             <div>
-                                <h2> <strong> 1 : PICK AN AUDITORIUM </strong></h2>
+                                <h2> <strong> STEP 1 : PICK AN AUDITORIUM </strong></h2>
                                 <p> Identify the auditorium that best suits your event needs. Consider factors such as:</p>
                                 <ul> 
-                                    <li> Capacity: How many attendees do you expect? Ensure the auditorium has enough seating.</li>    
-                                    <li> Location: Is it convenient for your audience to access?</li>  
-                                    <li> Facilities: Check for equipment like audio-visual systems, stage setup, lighting, and Wi-Fi.</li>    
+                                    <li> <strong>Capacity:</strong> How many attendees do you expect? Ensure the auditorium has enough seating.</li>    
+                                    <li> <strong>Location:</strong> Is it convenient for your audience to access?</li>  
+                                    <li> <strong>Facilities:</strong> Check for equipment like audio-visual systems, stage setup, lighting, and Wi-Fi.</li>    
                                 </ul>
                                 <p> Contact the venue or visit their website to explore available dates and specifications.</p>
                             </div>
                         </div>
                         <div class="steps-info">
                             <div>
-                                <h2>STEP 2: BOOK AN APPOINTMENT</h2>
+                                <h2><strong>STEP 2: BOOK AN APPOINTMENT</strong></h2>
                                 <p> Fill out the form to reserve the venue:</p>
                                 <ul> 
                                     <li> Fill out any required forms provided in this website.</li>    
-                                    <li> Provide details about your event.(Date and time preference, Tyoe of event,etc.)</li>  
+                                    <li> Provide details about your event. (Date and time preference, Type of event, etc.)</li>  
                                     <li> Note to inquire about additional services.</li>    
                                 </ul>
                                 <p> Prepare all the materials needed to secure the booking</p>
@@ -148,11 +148,11 @@
                         </div>
                         <div class="steps-info">
                             <div>
-                                <h2>STEPP 3: WAIT FOR APPOROVAL</h2>
+                                <h2><strong>STEP 3: WAIT FOR APPOROVAL</strong></h2>
                                 <p> The facility will review your request:</p>
                                 <ul> 
                                     <li> They may verify availability, event compatibility, and compliance with their policies.</li>    
-                                    <li> Be prepared to provide additional details or documentation.(Event agenda, Permits,etc.)</li>  
+                                    <li> Be prepared to provide additional details or documentation. (Event agenda, Permits, etc.)</li>  
                                     <li> Once approved, you'll receive confirmation through this website in User's Dashboard.</li>    
                                 </ul>
                                 <p> Review the terms of use and the guidelines of the choosen auditorium.</p>
@@ -162,13 +162,6 @@
                 </div>
             </div>        
         </section>
-
-        <section class="location-section">
-            <h1>
-                LOCATION
-            </h1>
-        </section>
-
 
         <footer class="footer">
             <p>

@@ -156,6 +156,8 @@ body {
 .home-about-details p {
     font-size: 18px;
     font-weight: 300;
+    font-family: 'Baskerville';
+    text-align: justify;
 }
 
 .home-about-details ul {
@@ -231,7 +233,7 @@ body {
     text-align: justify;
     color: #3d3c3c;
     font-size: 18px;
-    margin: 3px auto;
+    margin: 5px auto 15px;
 }
 
 .column-explore-details a {
@@ -286,7 +288,7 @@ body {
 }
 
 .column-steps-img{
-    margin-top: -50px;
+    margin-top: -20px;
     object-position: left top;
 }
 
@@ -302,7 +304,7 @@ body {
     color: #D4BA50;
 }
 
-.info-section {
+/* .info-section {
     background-color: #D4BA50;
     height: auto;
     width: 100%;
@@ -315,7 +317,7 @@ body {
     font-weight: 400;
     margin: 5px 0px;
     text-align: center;
-}
+} */
 
 .footer {
     background-color: black;

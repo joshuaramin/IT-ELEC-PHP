@@ -12,7 +12,7 @@
                         {{ __('Booking') }}
                     </h2>
                     <a href="/" style="text-decoration: none; color: #D4BA50; font-weight: 600; font-size: 15px;">
-                        Customer's View
+                        AUDITho Website
                     </a>
                 @endif
 
@@ -34,7 +34,7 @@
                         <label for="uploadAudi" class="form-label" style="padding-bottom: 15px; font-weight:bolder; font-size: 17px;">
                             Auditorium Image
                         </label>
-                      <img src={{ asset('storage/' . $audi->image)}} alt="Auditorium Image" style="width:50%; height:auto; display:block; margin:auto; filter: drop-shadow(0px 0px 4px #4d4642); padding-bottom: 20px;">
+                      <img src={{ asset('storage/' .  $bookings->auditorium->image)}} alt="Auditorium Image" style="width:50%; height:auto; display:block; margin:auto; filter: drop-shadow(0px 0px 4px #4d4642); padding-bottom: 20px;">
                     </div>
 
                     <div class="form-group" style="padding: 10px 50px 20px;">
