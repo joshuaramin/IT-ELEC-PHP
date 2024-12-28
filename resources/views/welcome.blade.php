@@ -166,13 +166,6 @@
             </div>
         </section>
 
-        {{-- MORE INFO --}}
-        <section class="info-section">
-            <h1>
-                MORE INFO
-            </h1>
-        </section>
-
         <footer class="footer">
             <p>
                 <strong>☎ Contact Us:</strong> (02) 8786-1611 loc. 8556 / 8692 / 8829      
