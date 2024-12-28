@@ -43,9 +43,8 @@
                             Description
                         </label>
                       <div>
-                        <textarea rows="7" type="text" class="form-control" id="description" name="description" placeholder="Description"
-                        style="font-size: 17px; width: 95%; border-radius: 10px; resize:none;" value="{{old("description", $auditorium->description)}}">
-                        </textarea>
+                      <textarea rows="7" type="text" class="form-control" id="description" name="description" placeholder="Description"
+                    style="font-size: 17px; width: 95%; border-radius: 10px; resize:none;">{{ old("description", $auditorium->description) }}</textarea>
                       </div>
                     </div>
 
