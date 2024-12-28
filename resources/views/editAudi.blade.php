@@ -6,7 +6,7 @@
             </h2>
 
             <a href="/" style="text-decoration: none; color: #D4BA50; font-weight: 600; font-size: 15px;">
-              Customer's View
+              AUDITho Website
             </a>
           </div>
     </x-slot>

@@ -81,6 +81,7 @@ body {
     flex-direction: column;
     font-size: 60px;
     color: white;
+    font-family: 'Baskerville';
 }
 
 .faq-section {
@@ -119,6 +120,7 @@ body {
     margin-bottom: -200px;
     font-style: normal;
     text-align: center;
+    font-family: 'Baskerville';
 }
 
 .faqs-detail-section {
@@ -149,11 +151,12 @@ body {
     cursor: pointer;
     width: 100%;
     height: 120px;
+    font-family: 'Baskerville';
 }
   
 .dropbtn:hover, .dropbtn:focus {
-    background-color: rgb(204, 200, 200);
-    color: #f1dd8c;
+    background-color: #f1e5b7;
+    color: black;
 }
   
 .dropdown {
@@ -171,6 +174,9 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    font-family: 'Baskerville';
 }
   
 .dropdown-content a {
